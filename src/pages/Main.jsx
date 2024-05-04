@@ -9,6 +9,7 @@ import { GoDotFill } from "react-icons/go";
 import Portfolio from "../assets/portfolio.png";
 import Portfolio2 from "../assets/portfolio2.png";
 import Portfolio3 from "../assets/portfolio3.jpg";
+import { Analytics } from '@vercel/analytics/react';
 
 function Main() {
   const scrollToSection = (sectionId) => {
@@ -22,6 +23,7 @@ function Main() {
   };
   return (
     <section className="body-font font-nunito w-screen h-full">
+      <Analytics />
       <Navigation />
       <div className="flex justify-center" id="home">
         <div className="flex justify-between pt-24 space-x-[280px] ">
